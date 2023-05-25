@@ -29,3 +29,14 @@ html{
    #bottomSection {
 background-color: rgb(134, 165, 129);
    }
+
+   .card {
+
+    margin: 10px;
+   }
+   
+   #locationSelect,
+   #parkTypeSelect {
+     display: none;
+   }
+   
