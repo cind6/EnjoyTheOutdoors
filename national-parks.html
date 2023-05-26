@@ -14,7 +14,9 @@
     <header>
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">Nature</a>
+                <a class="navbar-brand">
+                    <img src="images/Wilderness Wonders-1 (2).png" alt="Bootstrap" width="130" height="70">
+                </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
                     aria-label="Toggle navigation">
@@ -31,22 +33,54 @@
         </nav>
     </header>
 
-    <h1>National Parks</h1>
+    <h1 class="text-center mt-4">National Parks</h1>
+    <div class="container text-center">
+        <div class="row">
+            <div class="col">
+
+                <p>
+                    Embark on an exciting journey of exploration and natural wonders with our park search feature.
+                    Whether
+                    you're seeking a serene wilderness or a thrilling outdoor adventure, our search options allow you to
+                    discover parks that match your preferences.
+                </p>
+                <p>
+                    Search by location and uncover breathtaking landscapes in various regions. From towering mountains
+                    to
+                    picturesque coastlines, you'll find an abundance of natural beauty to immerse yourself in.
+                     Find
+                    the perfect park for your next adventure.
+                </p>
+                <p>
+                    Alternatively, you can search by park type to focus on specific experiences. Explore national parks,
+                    where
+                    pristine ecosystems and iconic landmarks await your exploration. Delve into the wonders of
+                    historical parks,
+                    where you can unravel the stories of the past. If you're seeking thrilling outdoor activities, our
+                    search
+                    feature allows you to discover adventure parks that offer adrenaline-pumping experiences. No matter
+                    your
+                    interests, our park search feature ensures that you'll find the ideal destination to fulfill your
+                    desires
+                    for nature and adventure.
+                </p>
+            </div>
+        </div>
+    </div>
 
     <!-----------------Radio Buttons------------------>
-    
-    <div class="container">
+
+    <div class="container text-center">
         <div class="row">
             <div class="col mb-4">
                 <h4>Search By</h4>
                 <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="radioButton" id="locationOption"
-                        value="option1" >
+                    <input class="form-check-input" type="radio" name="radioButton" id="locationOption" value="option1"
+                        checked>
                     <label class="form-check-label" for="locationOption">Location</label>
                 </div>
                 <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="radioButton" id="parkTypeOption"
-                        value="option2">
+                    <input class="form-check-input" type="radio" name="radioButton" id="parkTypeOption" value="option2">
                     <label class="form-check-label" for="parkTypeOption">Park Type</label>
                 </div>
             </div>
@@ -55,7 +89,7 @@
     <!-------search by Location------------>
 
     <div class="container">
-        <div id="locationSelect"class="row">
+        <div id="locationSelect" class="row">
             <div class="col">
                 <label for="locationDropdown">Search By location:</label>
                 <select class="form-select" id="locationDropdown">
@@ -66,12 +100,12 @@
             </div>
         </div>
     </div>
-    
+
 
     <!--------------search by park type------------->
 
     <div class="container">
-        <div id="parkTypeSelect"class="row">
+        <div id="parkTypeSelect" class="row">
             <div class="col">
                 <label for="parkTypeDropdown">Search by Park Type:</label>
                 <select class="form-select" id="parkTypeDropdown">
@@ -82,14 +116,6 @@
         </div>
     </div>
     <hr>
-
-    <!--- <div id="park-results">
-                     Park search results will be displayed here 
-                </div>
-            </div>---->
-
-    <hr>
-
 
 
     <!--Park details Card start-->

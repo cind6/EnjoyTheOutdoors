@@ -15,6 +15,8 @@ const parkDetailRow = document.getElementById("parkDetailRow");
 
 window.onload = () => {
 
+    console.log("window load");
+
     locationOption.onchange = onLocationOptionChange;
     parkTypeOption.onchange = onParkTypeOptionChange;
 
@@ -41,10 +43,13 @@ window.onload = () => {
 
 function onLocationOptionChange() {
     if (locationOption.checked) {
+
         //show location section
         locationSelect.style.display = "block";
+
         parkTypeSelect.style.display = "none";
         parkDetailRow.innerHTML = "";
+        locationDropdown.selectedIndex = 0;
     }
     else {
         //hide Location section
@@ -54,11 +59,13 @@ function onLocationOptionChange() {
 
 function onParkTypeOptionChange() {
     console.log("parkType")
+
     if (parkTypeOption.checked) {
         //show partype section
         parkTypeSelect.style.display = "block";
         locationSelect.style.display = "none"
         parkDetailRow.innerHTML = "";
+        parkTypeDropdown.selectedIndex = 0;
     }
     else {
         parkTypeSelect.style.display = "none";
@@ -94,7 +101,7 @@ function onLocationDropdownChange() {
 
 }
 
-
+//populates the location selected with options 
 function onParksTypeDropdownChange() {
 
     //selected parktype is defined as user selected value
@@ -116,7 +123,7 @@ function createNationalParkCard(park) {
 
 
     let divCol = document.createElement("div");
-    divCol.className = "col";
+    divCol.className = "col-4";
     parkDetailRow.appendChild(divCol);
 
     let divCard = document.createElement("div");
@@ -177,13 +184,7 @@ function createNationalParkCard(park) {
 
 
 
-function hideLocationSelect() {
-    locationSelect.style.display = "none";
-}
 
-function showLocationSelect() {
-    locationSelect.style.display = "block";
-}
 
 
 
