@@ -41,6 +41,7 @@ window.onload = () => {
     }
 };
 
+//------------------------------------------------------------------------
 function onLocationOptionChange() {
     if (locationOption.checked) {
 
@@ -101,7 +102,9 @@ function onLocationDropdownChange() {
 
 }
 
+//------------------------------------------------------------------------
 //populates the location selected with options 
+
 function onParksTypeDropdownChange() {
 
     //selected parktype is defined as user selected value
@@ -146,6 +149,18 @@ function createNationalParkCard(park) {
     liId.textContent = `Id: ${park.LocationID}`;
     ulParkDetails.appendChild(liId);
 
+    if (park.Visit) {
+        let liWebsite = document.createElement("li");
+        let websiteLink = document.createElement("a");
+        websiteLink.href = park.Visit;
+        websiteLink.textContent = "Visit Website";
+        websiteLink.target = "_blank"; // _blank value opens in a new window/tab
+        liWebsite.appendChild(websiteLink);
+        ulParkDetails.appendChild(liWebsite);
+    }
+
+    
+
     let liAddress = document.createElement("li");
     liAddress.textContent = `Address: ${park.Address}`;
     ulParkDetails.appendChild(liAddress);
@@ -180,8 +195,6 @@ function createNationalParkCard(park) {
 
 
 }
-
-
 
 
 

@@ -1,15 +1,15 @@
-
-/* * {
+* {
     margin: 0;
     padding: 0;
-} */
+} 
 
 body {
-    background: linear-gradient(rgb(225, 234, 150), rgb(233, 192, 130), rgb(197, 190, 127), rgb(181, 204, 163), rgb(168, 201, 144));
-    /* background: rgba(119, 158, 88, 0.734) */
+    /*background: linear-gradient(rgb(225, 234, 150), rgb(233, 192, 130), rgb(197, 190, 127), rgb(181, 204, 163), rgb(168, 201, 144)); 
+    
+     background: rgba(119, 158, 88, 0.734) */
 
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    
 }
 
 body {
@@ -23,7 +23,7 @@ html{
 }
 
 
-body.home {
+main.index {
 
 
    
@@ -31,8 +31,9 @@ body.home {
     background-position: center-center;
     background-size:cover;
     background-attachment: fixed;
-    
-    
+    padding-inline: 10%;
+    padding-top: 2%;
+   padding-bottom: 2%;
     
 
 }
@@ -53,7 +54,7 @@ body.home {
 
 .content-container {
     background-color: rgba(255, 255, 255, 0.2); /* Adjust the alpha value (0.7) to control the transparency */
-    padding: 50px; /* Add some padding to the container */
+    padding: 10px; /* Add some padding to the container */
   }
   
 
@@ -71,18 +72,36 @@ body.home {
 
 #parkTypeSelect {
     display: none;
+    position: center;
+    width: 40%;
+    margin: auto
 }
 
-
+#locationSelect {
+    position: center;
+    width: 40%;
+    margin: auto
+}
 
 
 
 p{
-    color: rgb(129, 79, 39);
+    color: rgb(255, 255, 255);
+    
 }
 
 
+.h1-mountain{
+        margin: 2rem 0 5rem 0;
+        text-align: center;
+        color: #ebe3e3;
+        font-stretch: extra-expanded;
+        font-family:sans-serif;
+        font-weight: 300;
+        font-size: 3rem;
+    }
 
 
 /*-------------------------------------------------- */
+
 
