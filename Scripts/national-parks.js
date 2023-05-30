@@ -148,15 +148,15 @@ function createNationalParkCard(park) {
     let liId = document.createElement("li");
     liId.textContent = `Id: ${park.LocationID}`;
     ulParkDetails.appendChild(liId);
-
+// dynamically create a website link
     if (park.Visit) {
-        let liWebsite = document.createElement("li");
-        let websiteLink = document.createElement("a");
-        websiteLink.href = park.Visit;
+        let liWebsite = document.createElement("li")//This element will be used to display the website link.
+        let websiteLink = document.createElement("a");//represents an anchor tag or a hyperlink.
+        websiteLink.href = park.Visit;//This means that the link will point to the URL stored in the "Visit" property of the "park" object.
         websiteLink.textContent = "Visit Website";
         websiteLink.target = "_blank"; // _blank value opens in a new window/tab
-        liWebsite.appendChild(websiteLink);
-        ulParkDetails.appendChild(liWebsite);
+        liWebsite.appendChild(websiteLink);//anchor tag element is appended as a child to the list item element 
+        ulParkDetails.appendChild(liWebsite);//list item element containing the website link is appended as a child to the "ulParkDetails" element.
     }
 
     

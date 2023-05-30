@@ -97,16 +97,18 @@ function createMountainCard(mountain) {
     mountainEffort.className = "mountainEffort";
     mountainEffort.innerHTML = "Effort: " + mountain.effort;
     mountainElevation.appendChild(mountainEffort);
-
-    
+//this function is making an asynchronous API call to retrieve the sunrise and sunset times for a given latitude (lat) and longitude (lng) coordinates.
+    //mountain.coords.lat and mountain.coords.lng as arguments.
     getSunsetForMountain(mountain.coords.lat, mountain.coords.lng)
     .then((data) => {
+         // Create elements with the sunrise/sunset times
         const sunriseTime = data.results.sunrise;
         const sunsetTime = data.results.sunset;
 
-        // Create elements or update existing elements with the sunrise/sunset times
-        const timesElement = document.createElement("div");
+       
+        const timesElement = document.createElement("div");//A new "div" element is created to hold the sunrise and sunset times. 
         timesElement.className = "card-text";
+        //The timesElement is populated with the sunrise and sunset times using the innerHTML property.
         timesElement.innerHTML = `<p>The current sunrise time is ${sunriseTime}.</p>
                                 <p>The current sunset time is ${sunsetTime}.</p>`;
 
@@ -118,7 +120,7 @@ function createMountainCard(mountain) {
 }
 
 
-
+// function that can "fetch" the sunrise/sunset times
 async function getSunsetForMountain(lat, lng) {
     let response = await fetch(
       `https://api.sunrise-sunset.org/json?lat=${lat}&lng=${lng}&date=today`
