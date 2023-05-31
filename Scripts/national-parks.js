@@ -156,7 +156,7 @@ function createNationalParkCard(park) {
 
      // Create div element
     let divCol = document.createElement("div");
-    divCol.className = "col-4";
+    divCol.className = "col-xl-3 col-md-6 mt-4";
     parkDetailRow.appendChild(divCol);
 
      //Create div element for card

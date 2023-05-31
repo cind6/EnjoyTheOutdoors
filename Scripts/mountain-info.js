@@ -57,7 +57,7 @@ function createMountainCard(mountain) {
     // let mountainDetailRow = document.getElementById("mountainDetailRow");
 
     let divCol = document.createElement("div");
-    divCol.className = "col";
+    divCol.className = "col col-md-6 mx-auto mt-3";
     mountainDetailRow.appendChild(divCol);
 
     let divCard = document.createElement("div");
