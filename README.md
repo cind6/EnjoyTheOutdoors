@@ -13,3 +13,8 @@ Mountain Information: Each mountain listing provides detailed information.
 
 
 
+
+![homepage (2)](https://github.com/cind6/EnjoyTheOutdoors/assets/130394995/cb29b80b-8dbb-4f88-b067-4773084a9501)
+
+![Capture2 (2)](https://github.com/cind6/EnjoyTheOutdoors/assets/130394995/f7ae9c98-35be-4d96-b734-448e3fffdb75)
+![Capture6 (2)](https://github.com/cind6/EnjoyTheOutdoors/assets/130394995/ade43de8-72b8-4209-b805-47747bcfb0f8)
